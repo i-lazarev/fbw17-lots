@@ -30,6 +30,7 @@ let serverData = {
 
 let users = serverData.data;
 
+// print out the emails of every single user in our array
 for(let i=0; i<users.length; i++) {
   console.log( users[i].email );
 }

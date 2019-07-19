@@ -10,9 +10,8 @@ for(let i=0; i<array.length; i++) {
 }
 
 // ARRAY FUNCTION (filter, map, reduce)
+// => this is equal to the for loop above. We just access the current 
+// item not by its index. We have it in the variable "currentItem"
 array.filter(function(currentItem) {
   currentItem // = array[i]
-})
-
-// array.filter() => filtered Array
-
+});
