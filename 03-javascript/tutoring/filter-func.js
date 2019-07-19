@@ -6,14 +6,14 @@ let coffees = [
   
   
   let filterArr = coffees.filter( function(item) {
-      return item.price >= 2 && item.price <= 5;   
+      return item.price >= 2;   
   } );
   
   /*
-  THIS Function would do the same as the filter() function above.
+  This function below is doing the exact same thing as the filter() function above.
   But it has far more code and is more complex. That's why we use 
-  the array filter method as a shortcut 
-  
+  the array filter method as a shortcut, without any loops and array manipulation functions like push
+  */ 
   function filter() {
     let filterArr = []
     for(let i=0; i<coffees.length; i++) {
@@ -23,7 +23,6 @@ let coffees = [
     }
     return filterArr;
   }
-  */
   
   console.log(filterArr);
   
