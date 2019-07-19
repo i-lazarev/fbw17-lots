@@ -59,6 +59,7 @@ could be recapped.
 - Basic CSS
   - Binding CSS to our HTML
   - CSS Rules (Selector + Declaration)
+  - Inheritance
   - Box Model
   - Selectors
     - ID and class
@@ -99,6 +100,11 @@ could be recapped.
 - How to execute JavaScript files
 - Output to the console (console.log)
 - Variables & variable types
+  - Number
+  - String
+  - undefined
+  - Array
+  - Object
 - Type Conversions (string to number, etc)
 - Ternary Operator
 
@@ -108,6 +114,10 @@ could be recapped.
   - pop
   - slice
   - shift
+  - join
+  - filter
+  - reduce
+  - map
 - Decisions
   - If / Else 
   - Switch / Case
@@ -116,3 +126,4 @@ could be recapped.
   - For
   - Nested loops
   - Break / continue
+- 
