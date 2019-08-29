@@ -4,8 +4,7 @@ Please realize the following animation on the boxes.
 
 ![Result](result.gif)
 
-All boxes should rotate with a different speed. They should rotate multiple
-times.
+All boxes should rotate with a different speed. They should rotate multiple times.
 
 Find all detailed instructions in the index.html
 
