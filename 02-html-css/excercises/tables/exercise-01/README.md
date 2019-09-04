@@ -17,4 +17,5 @@ Raw table (non HTML):
 | Logo | Amazon    | 0800 100 38 44 | [https://www.amazon.de/](https://www.amazon.de/)         |
 
 Transfer it into the following HTML table:
+
 ![Result](mockup.png)
