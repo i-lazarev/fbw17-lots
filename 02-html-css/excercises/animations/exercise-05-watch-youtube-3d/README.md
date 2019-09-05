@@ -6,7 +6,7 @@ Adapt the YouTube video so that it looks like in the reference image below:
 
 ![Result](result_normal.png)
 
-Apply the CSS properties "perspective", "transform" and "transition" .
+Apply the CSS properties "perspective", "transform" and "transition".
 
 See more instructions in the file index.html.
 
