@@ -10,4 +10,6 @@ Use attribute selectors to select files by type. And then use a pseudo element t
 
 See detailed instructions + all icons in the index.html file.
 
+Result:
+
 ![Preview](./result.png)

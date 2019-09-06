@@ -12,4 +12,6 @@ Tip: Apply the pseudos on each li tag.
 
 See detailed instructions in the index.html file.
 
+Result:
+
 ![Preview](./result.png)
