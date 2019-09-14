@@ -9,6 +9,8 @@
 
 Mobile first (=extra small mobile) / default:
 
+(=> watch out: the first three elements are all part of one row!)
+
 ![Result mobile](result-default.png)
 
 Small mobile (sm):

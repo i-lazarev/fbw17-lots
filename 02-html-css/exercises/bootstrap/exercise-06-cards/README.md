@@ -8,7 +8,7 @@ By default they should be stacked on top of one another.
 
 On medium devices (>= 768px) three columns should flow next to each other like seen below.
 
-Just use ONE grid row in total, please.
+Just use ONE div with the class "row".
 
 ![Mockup](cards.png)
 

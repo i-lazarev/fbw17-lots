@@ -12,7 +12,7 @@ Your page must include:
 
 Mockup:
 
-![Mockup](image/guide.png)
+![Mockup](mockup.png)
 
 Refer to the bootstrap documentation for more info.
 
