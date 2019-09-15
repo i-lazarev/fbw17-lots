@@ -1,4 +1,4 @@
-# Bootstrap - Page Building - Exercise 1
+# Bootstrap - Page Building - Exercise #1
 
 Create a simple page using bootstrap!
 
@@ -8,7 +8,7 @@ Your page must include:
 
 - a banner
 - a navigation bar
-- a simple grid system and cards!
+- a simple grid system and cards
 
 Mockup:
 

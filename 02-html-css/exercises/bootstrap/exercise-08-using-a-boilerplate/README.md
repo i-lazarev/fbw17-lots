@@ -1,6 +1,6 @@
-# Bootstrap - Exercise #7 - The Copy Cat
+# Bootstrap - Exercise #8 - The Copy Cat
 
-Sometimes we just want to start our page from an already matching template.
+Sometimes we just want to start our page from a template which already matches our layout needs quite nicely.
 
 We can use bootstrap examples for that.
 
@@ -8,28 +8,31 @@ We can use bootstrap examples for that.
 
 ### Pick the template code
 
-- Make a copy of your starter template. Call it bootstrap-template-test.html
+- Create an empty bootstrap-template-test.html file
 - On the bootstrap page: Go to tab "Examples"
 - Click on any of the examples
 - Right-click on the page and select "View source"
 - Select & Copy all code by CTRL+A followed by CTRL+C
-- Paste the code into the body of your bootstrap-template-test.html
-- Keep the source code page open. We will need it again...
+- Paste the code into your empty bootstrap-template-test.html
+- Keep the boottrap source code page open. We will need it again...
 
 ### Fix the broken links
 
 - View the page
-  - The bootstrap files are not loaded => because all links to bootstrap in the HTML are relative. o the browser does not find these resources.
+  - The bootstrap files are not loaded => because all links to bootstrap in the HTML are relative. The browser look for these resources (css + javascript files) now on your local PC. But does not find these resources there
 - Add the following line within your head section to fix it:  `<base href="https://getbootstrap.com">`. Now you make all relative links pointing to bootstrap again
-- Watch for custom CSS stylesheet linked like so `<link href="album.css" >`. It should look much better. But not 1:1.
-- Watch for a CSS file in the head that does not start with a slash and is just referenced by its time. This link is not relative to the domain. It is relative to the current folder
-- View the source code of the original page again. Click on the link. Now you get the full url of the CSS file in the address bar of the browser. Copy this full url and paste it into your local file instead of the filename.
+- View the page in the browser. It should look much better. But not 1:1.
+- Watch for a custom CSS stylesheet linked like so `<link href="album.css" >`.
+  - This custom CSS file in the head does not start with a slash. This link is not relative to the domain. It is relative to the current folder. So again, our page does not find it. We need to fix that too.
+- View the source code of the original page again. In the code: Click on the link of the file. Now you get forwarded to the file. Find the full url of the CSS file in the address bar of the browser. Copy this url and paste it into your local file instead of the filename.
 - View your page again. Now it should look like the original
 
-### Reponsivity test
+### Responsivity test
 
 - Go into the Chrome Dev Tools (either right-click "Inspect" on any element or go to your top menu: Tools > Developer tools)
 - Shrink and expand the view (emulating mobile and desktop view)
 - Watch if the responsivity works
 
-Congratulations. You can you can always start any bootstrap page with a boilerplate without the need to reinvent the wheel all the time.
+Congratulations.
+
+You now can always start any of your bootstrap pages with a boilerplate. Without the need to reinvent the (layout) wheel all the time.

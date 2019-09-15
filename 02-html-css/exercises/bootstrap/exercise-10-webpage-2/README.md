@@ -10,7 +10,7 @@ Your page must include:
 - hero image / jumbotron
 - four cards
 
-NOTE: Add a grey footer!
+NOTE: Add a grey footer.
 
 Mockup:
 
