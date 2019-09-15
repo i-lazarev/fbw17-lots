@@ -7,7 +7,7 @@ The exercises 1-5 cover the positioning properties:
 - fixed
 - sticky
 
-The z-index is covered in exercise 10.
+The z-index is covered in exercise 10 and onward.
 
 ## Prerequisites
 
