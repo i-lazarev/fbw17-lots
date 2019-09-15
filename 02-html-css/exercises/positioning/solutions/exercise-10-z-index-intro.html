@@ -17,8 +17,8 @@
     }
 
     .container {
-      width: 80vw;
-      height: 80vh;
+      width: 300px;
+      height: 300px;
       margin: 10vh 10vw;
       border: 1px solid;
       position: relative;
@@ -49,32 +49,27 @@
       left: 25%;
       width: 50%;
       height: 50%;
-      z-index: 1;
-      /*this is necessary to "protect" the children 
-        which have a negative z-index to go below all other boxes */
     }
 
     #div3 {
       position: absolute;
-      /* place the parent 20px inwards to create some empty frame around. 
-      This frame could be filled by the child*/
-      top: 20px;
-      left: 20px;
-      bottom: 20px;
-      right: 20px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
       background: green;
     }
 
     #div4 {
       position: absolute;
       /* let the child extend its parent by 20px. This way it can fill in the gap */
-      top: -20px;
-      left: -20px;
-      right: -20px;
-      bottom: -20px;
       background: purple;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       z-index: -1;
-      /* move box below the green div3, so we can see it */
+      /* move box below the green div3, so we can see th parent */
     }
 
     #div5 {
@@ -82,7 +77,7 @@
       left: 0;
       background: blue;
       z-index: -1;
-      /* keep box below sub-container */
+      /* keep this box below the sub-container */
     }
 
     #div6 {
@@ -90,7 +85,7 @@
       right: 0;
       background: grey;
       z-index: -1;      
-      /* keep box below sub-container */
+      /* keep this box below the sub-container */
     }
 
   </style>
