@@ -1,0 +1,58 @@
+@mixin wtf($things) {
+    display:flex;
+    justify-content: $things;
+    align-items:center;
+    padding-bottom: 30px;  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 2rem;
+}
+
+header,
+ul{
+    @include wtf(center);
+}
+
+li{
+    @include wtf(center);
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cards,
+.portion{
+    @include wtf(center);
+    flex-direction: column;
+}
+.card{
+    width: 300px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+article,
+section{
+    padding-top:10px;
+    padding-bottom: 30px;
+}
+
+img{
+    padding: 0 30px 30px 0;
+    width: 300px;
+}
+
+@media only screen and (min-width: 600px) {
+  .cards,
+  .portion {
+    flex-direction: row;
+  }
+}
