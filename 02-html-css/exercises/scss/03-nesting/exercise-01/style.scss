@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 10rem;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.356);
+  text-align: center;
+  padding-top: 3.25rem;
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+}
+
+nav {
+  border-bottom: 0.1rem solid rgba(128, 128, 128, 0.808);
+}
+ul {
+  display: flex;
+  justify-content: center;
+
+  li {
+    list-style: none;
+    padding: 1rem;
+
+    &:link {
+      color: grey;
+    }
+
+    &:visited {
+      color: rgba(128, 0, 128, 0.877);
+    }
+
+    &:hover {
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+main {
+  padding: 2rem;
+  flex-direction: column;
+
+  aside {
+    border: 0.1rem solid rgba(128, 128, 128, 0.808);
+    padding: 0.5rem;
+  }
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0.5rem;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    border: 0.1rem solid rgba(128, 128, 128, 0.808);
+    margin: 1rem;
+    height: 20rem;
+  }
+}
+
+footer {
+  padding: 0.5rem;
+  background-color: rgba(128, 128, 128, 0.288);
+  margin-top: 1rem;
+  border-top: 0.1rem solid rgba(128, 128, 128, 0.808);
+}
+
+/* adapt sizes at some point */
+@media screen and (min-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-text {
+    width: 60%;
+  }
+
+  aside {
+    width: 30%;
+  }
+
+  section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
