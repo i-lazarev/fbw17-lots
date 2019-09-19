@@ -1,133 +1,180 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 nav > ul {
-    height: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav > ul a {
+  color: #0e749e;
 }
 
 li {
-    list-style: none;
-    padding: 1rem;
-}
-
-nav a {
-    color: #0e749e;
+  list-style: none;
+  padding: 1rem;
 }
 
 a {
-    font-size: 1.2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 header {
-    height: 20rem;
-    text-align: center;
-    padding: 2rem;
-    margin-bottom: 1rem;
+  height: 20rem;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  background-image: url(/03-nesting/exercise-02/images_website/header.jpg);
 }
 
-header > h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2rem;
+header h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
 }
-
 
 .img-mountain {
+  background-image: url(/03-nesting/exercise-02/images_website/mountain.jpg);
 }
 
 .img-surfer {
+  background-image: url(/03-nesting/exercise-02/images_website/surfer.jpg);
 }
 
 .img-tree {
+  background-image: url(/03-nesting/exercise-02/images_website/tree.jpg);
 }
 
-
 .img {
-    height: 10rem;
-    width: 100%;
+  height: 10rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* both - the cards container and a single card - have something in common.
     They flip the direction of their children on certain breakpoints.
     So they both are.... ? Setup the corresponding style here....
 */
-.cards, .card {
+.cards,
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card {
-    padding: 1rem;
-    background-color: #e0ddb2;
-    margin: 1rem;
-    border: 2px solid #dad6ab;
-    border-radius: 5px;
+  padding: 1rem;
+  background-color: #e0ddb2;
+  margin: 1rem;
+  border: 2px solid #dad6ab;
+  border-radius: 5px;
 }
 
 .card-text {
-    padding-top: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 main {
-    margin: 1rem;
+  margin: 1rem;
 }
 
-aside, article {
-    padding: 1rem;
-    font-size: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+aside,
+article {
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 aside {
-    border: 2px solid #dad6ab;
+  border: 2px solid #dad6ab;
 }
 
 footer > ul {
-    height: 4rem;
-    background-color: #016690;
+  height: 4rem;
+  background-color: #016690;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-
-footer a {
-    color: #fff;
+footer > ul a {
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
-
-    .card {
-    }
-
-    .card-text {
-        padding: 0 1rem 1rem 1rem;
-    }
-
-    nav > ul {
-    }
-
-    main {
-    }
-
-    article {
-    }
-
-    aside {        
-    }
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .card-text {
+    padding: 0 1rem 1rem 1rem;
+  }
+  nav > ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  article {
+    width: 50%;
+  }
+  aside {
+    width: 25%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-
-    .cards {
-    }
-
-    .card {
-    }
-
-    .img {
-    }
-   
-    .card-text {
-    }
+  .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    width: 45%;
+  }
 }
+/*# sourceMappingURL=style.css.map */

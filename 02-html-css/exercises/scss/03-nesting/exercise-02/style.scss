@@ -1,0 +1,154 @@
+@mixin flexing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+$font-look: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+nav > ul {
+  height: 4rem;
+  @include flexing();
+  a {
+    color: #0e749e;
+  }
+}
+
+li {
+  list-style: none;
+  padding: 1rem;
+}
+
+a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: $font-look;
+}
+
+header {
+  height: 20rem;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  background-image: url(/03-nesting/exercise-02/images_website/header.jpg);
+  h1 {
+    font-family: $font-look;
+    font-size: 2rem;
+  }
+}
+
+.img-mountain {
+  background-image: url(/03-nesting/exercise-02/images_website/mountain.jpg);
+}
+
+.img-surfer {
+  background-image: url(/03-nesting/exercise-02/images_website/surfer.jpg);
+}
+
+.img-tree {
+  background-image: url(/03-nesting/exercise-02/images_website/tree.jpg);
+}
+
+.img {
+  height: 10rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* both - the cards container and a single card - have something in common.
+    They flip the direction of their children on certain breakpoints.
+    So they both are.... ? Setup the corresponding style here....
+*/
+.cards,
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  padding: 1rem;
+  background-color: #e0ddb2;
+  margin: 1rem;
+  border: 2px solid #dad6ab;
+  border-radius: 5px;
+}
+
+.card-text {
+  padding-top: 1rem;
+  font-family: $font-look;
+}
+
+main {
+  margin: 1rem;
+}
+
+aside,
+article {
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: $font-look;
+}
+
+aside {
+  border: 2px solid #dad6ab;
+}
+
+footer > ul {
+  height: 4rem;
+  background-color: #016690;
+  @include flexing;
+  a {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card-text {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  nav > ul {
+    justify-content: flex-end;
+  }
+
+  main {
+    @include flexing();
+  }
+
+  article {
+    width: 50%;
+  }
+
+  aside {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .img {
+  }
+
+  .card-text {
+  }
+}
