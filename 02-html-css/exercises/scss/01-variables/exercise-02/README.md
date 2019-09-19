@@ -2,13 +2,17 @@
 
 ## Task 1
 
-Adapt the given CSS stylesheet and position the elements as seen in the pictures below.
+Convert the given CSS stylesheet to SCSS (=rename the extension from .css to .scss)
+
+Convert the style.scss to style.css by using the Sass command in the terminal. Apply the --watch flag so your changes will be constantly included in the CSS file.
+
+Adapt the given SCSS and position the elements as seen in the pictures below.
 
 Add padding, margins etc where needed.
 
 Make it responsive. Design for mobile first and then desktop. Breakpoint: 600px.
 
-Tipp: Limit the size of the image first, because it is pretty big. It should not be able to exceed its container.
+Tip: Limit the size of the image first, because it is pretty big and breaks your whole layout. The image should not be able to exceed the boundaries of its container. Apply either width or max-width on it.
 
 ## Task 2
 
@@ -30,14 +34,10 @@ Restyle the two lists at the top and the bottom. Let the list items flow next to
 
 ## Task 3 - Switch from CSS to SCSS
 
-- Backup / Copy your style.css to style-original.css (to keep it as a reference)
-- Rename your style.css file to style.scss
 - Within style.scss
   - Create variables for 2 different colors (background or text or both)
   - Create variables for 3 different font sizes (e.g. one for headings, paragraph & button)
   - Apply all variables throughout your stylesheet
-- Convert the style.scss to style.css by using the Sass command in the terminal
-  - Apply the --watch flag so it will constantly include all your changes
 
 Now change a variable - e.g. a heading color - and test if the styles are adapted throughout the page.
 
