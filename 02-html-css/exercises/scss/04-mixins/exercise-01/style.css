@@ -1,116 +1,185 @@
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header {
-    height: 6rem;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 1.5rem;
+  height: 6rem;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 1.5rem;
 }
 
-h1, h2 {
-    font-size: 1rem;
+.header h1,
+.header h2 {
+  font-size: 1rem;
 }
 
 .nav_links {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-    background-color: rgba(0, 0, 255, 0.514);
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 1rem;
+  background-color: rgba(0, 0, 255, 0.514);
 }
 
 li {
-    padding:1rem;
-    list-style: none;
+  padding: 1rem;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .section_text > h3 {
-    text-align: center;
+  text-align: center;
 }
 
-.section_text, .section_images {
-    margin: 1rem;
+.section_text,
+.section_images {
+  margin: 1rem;
 }
 
 .section_images {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
+
 img {
-    height: 12rem;
-    width: 18rem;
-    margin: 0 0.5rem 1rem 0.5rem
+  height: 12rem;
+  width: 18rem;
+  margin: 0 0.5rem 1rem 0.5rem;
 }
 
 .asides {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 1rem;
 }
 
-
 .asides > aside {
-    border: 0.2rem solid rgba(0, 0, 255, 0.678);    
-    padding: 1rem;
-    margin-bottom: 1rem;
+  border: 0.2rem solid rgba(0, 0, 255, 0.678);
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer_links {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 1rem;
 }
+
 .footer {
-    height: 5rem;
-    margin-top: 1rem;
-    background-color: rgba(0, 0, 255, 0.678);
+  height: 5rem;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 255, 0.678);
 }
 
 /* 
 On "Tablet" view:
 Let images & aside sections flow in row direction 
-*/ 
+*/
 @media screen and (min-width: 600px) {
-    
-    .section_images {
-        display: flex;
-        flex-direction: row;
+  .section_images,
+  .asides {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    }
-
-    .section_text {
-        width: 70%;
-    }
-
-    .asides {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .asides > aside {
-        width: 45%;
-        margin: 0.5rem;
-    } 
+  }
+  .section_text {
+    width: 70%;
+  }
+  .asides > aside {
+    width: 45%;
+    margin: 0.5rem;
+  }
 }
+/*# sourceMappingURL=style.css.map */
